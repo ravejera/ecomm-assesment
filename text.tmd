@@ -1,0 +1,49 @@
+The first two steps ya folder is easier
+
+create the e-comerce folder and inside it create another folder backend
+
+inside the backend create a node js/express app
+
+where you do your npm init then install express and mssql
+
+add your start script in your package json like "start": "node index.js" assuming you will have index.js
+
+remember the express app we had started, you need to do the same, and create like 5 endpoints
+
+like
+
+/products which will look like
+
+app.post('/products', asyn (req, res) => {
+
+//logic to add your product
+
+})
+
+app.get('/products', asyn (req, res) => {
+
+   //logic to get all products
+
+})
+
+app.get('/products/:id', asyn (req, res) => {
+
+   //logic to get one product
+
+})
+
+app.post('/products/:id', asyn (req, res) => {
+
+   //logic to update product
+
+})
+
+app.delete('/products/:id/delete', asyn (req, res) => {
+
+   //logic to delete a product
+
+})
+
+
+
+All the logic needs to be handled by the database, you can look at the documentation ya mssql itakupea ideas how to connect to the db and make updates
